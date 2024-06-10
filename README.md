@@ -3,9 +3,9 @@
 Group Name: __Fill your team name__. 
 
 Team Mates:
-1. Aina Syazana Binti Mortadza 2218248
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1. AINA SYAZANA BINTI MORTADZA 2218248
+2. FITRAH NUR HUMAIRA BINTI MUHAMAD RADAUDIN 2212822
+3. FARAH IRDINA BINTI AHMAD ZULKIFLEE 2215184
 
 ## Rules
 1. You are allowed to have **3 group** members.
