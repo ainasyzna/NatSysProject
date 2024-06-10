@@ -23,7 +23,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)***[https://github.com/ainasyzna/NatSysProject]
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)*** One readme files and one images folder.
 
 
 ## Exploring github codespaces
@@ -55,9 +55,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***Ubuntu Linux.
+2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 2 cores, 8 GB RAM, and 32 GB storage  && 32 cores, 64 GB RAM, and 128 GB storage.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** Or else the work will be lost since it is not saved into the main repository when we submit our project.
 
 ## Exploring the Terminal
 
@@ -74,23 +74,240 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** 
+*** /workspaces/NatSysProject ***
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+3. Run the command **df** . ***(1 mark)*** 
+***
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10381016  20772564  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        8     65528   1% /dev/shm
+/dev/root       30298176 24449968   5831824  81% /vscode
+/dev/loop3      32847680 10381016  20772564  34% /workspaces
+/dev/sda1       46127956      100  43752280   1% /tmp
+***
+4. Run the command **du** . ***(1 mark)***
+***
+1972    ./images
+8       ./.git/info
+4       ./.git/branches
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+8       ./.git/refs/heads
+12      ./.git/refs/remotes/origin
+16      ./.git/refs/remotes
+4       ./.git/refs/tags
+32      ./.git/refs
+8       ./.git/logs/refs/heads
+12      ./.git/logs/refs/remotes/origin
+16      ./.git/logs/refs/remotes
+28      ./.git/logs/refs
+36      ./.git/logs
+8       ./.git/objects/c3
+8       ./.git/objects/0d
+4       ./.git/objects/info
+8       ./.git/objects/fe
+8       ./.git/objects/9c
+8       ./.git/objects/83
+8       ./.git/objects/86
+8       ./.git/objects/b2
+8       ./.git/objects/24
+12      ./.git/objects/b5
+20      ./.git/objects/1c
+12      ./.git/objects/70
+12      ./.git/objects/14
+8       ./.git/objects/58
+8       ./.git/objects/a3
+8       ./.git/objects/47
+12      ./.git/objects/93
+12      ./.git/objects/73
+12      ./.git/objects/cd
+12      ./.git/objects/a1
+8       ./.git/objects/e7
+8       ./.git/objects/74
+12      ./.git/objects/3d
+8       ./.git/objects/f6
+8       ./.git/objects/cb
+12      ./.git/objects/6e
+8       ./.git/objects/0b
+8       ./.git/objects/04
+8       ./.git/objects/91
+8       ./.git/objects/4a
+12      ./.git/objects/d2
+8       ./.git/objects/e9
+12      ./.git/objects/72
+12      ./.git/objects/61
+8       ./.git/objects/b9
+12      ./.git/objects/62
+8       ./.git/objects/fa
+12      ./.git/objects/af
+8       ./.git/objects/b6
+20      ./.git/objects/44
+8       ./.git/objects/52
+12      ./.git/objects/1b
+12      ./.git/objects/64
+12      ./.git/objects/17
+8       ./.git/objects/a6
+12      ./.git/objects/7b
+8       ./.git/objects/eb
+8       ./.git/objects/3f
+16      ./.git/objects/fb
+8       ./.git/objects/81
+8       ./.git/objects/60
+8       ./.git/objects/ab
+8       ./.git/objects/71
+8       ./.git/objects/4f
+12      ./.git/objects/5b
+12      ./.git/objects/2e
+8       ./.git/objects/41
+1824    ./.git/objects/pack
+8       ./.git/objects/49
+8       ./.git/objects/c6
+8       ./.git/objects/4b
+8       ./.git/objects/20
+8       ./.git/objects/d8
+8       ./.git/objects/3a
+8       ./.git/objects/f9
+8       ./.git/objects/96
+8       ./.git/objects/f2
+8       ./.git/objects/fd
+8       ./.git/objects/fc
+12      ./.git/objects/ff
+12      ./.git/objects/e5
+2504    ./.git/objects
+68      ./.git/hooks
+2696    ./.git
+4688    .
+***
+5. Run the command **ls** . ***(1 mark)*** 
+*** README.md  images ***
+6. Run the command **ls -asl** . ***(1 mark)*** 
+***
+total 32
+ 4 drwxrwxrwx+ 4 codespace root  4096 Jun 10 14:06 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 Jun 10 14:06 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 Jun 10 14:13 .git
+16 -rw-rw-rw-  1 codespace root 15639 Jun 10 14:27 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 10 14:06 images
+ ***
+7. Run the command **free -h** . ***(1 mark)*** 
+***
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.4Gi       239Mi       1.0Mi       6.1Gi       6.0Gi
+Swap:            0B          0B          0B
+***
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
+***
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3242.601
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.86
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3242.427
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.86
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+***
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
+***
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3242.427
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqd
+top - 14:30:13 up 40 min,  0 users,  load average: 0.23, 0.28, 0.31
+Tasks:  18 total,   1 running,  17 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.2 us,  1.5 sy,  0.0 ni, 97.2 id,  0.2 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,    254.6 free,   1439.2 used,   6235.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6174.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                
+   2368 codespa+  20   0   21.5g 330176  49920 S   1.0   4.1   0:30.40 node                                                                   
+    897 root      20   0 1983176  84864  52992 S   0.3   1.0   0:00.30 dockerd                                                                
+   2843 codespa+  20   0 1125064  60880  42112 S   0.3   0.7   0:01.83 node                                                                   
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.05 docker-init   
+***      
+10. Run the command **uname -a**. ***(1 mark)*** 
+***
+Linux codespaces-14a67f 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+***
+11. What is the available free memory in the system. ***(1 mark)*** *** 239Mi.***
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** *** 1K-blocks ***
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+***
+Linux Distribution: Ubuntu 22.04.1 LTS
+Kernel Version: 6.5.0-1021-azure
+Hardware Architecture: x86_64 (64-bit)
+***
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+***
+ls is to list the name of files and directories in the current directory while ls -asl is to lists all files (including hidden ones) in a detailed format with file sizes. 
+***
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** ***2560 4K pages ***
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** ***3242.427 ***
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** ***node process with PID 2368. ***
 
 ## Running your own container instance.
 
@@ -150,8 +367,9 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+***Not persistent, because When a container is stopped or removed, any changes made to its filesystem, including newly created files or modifications to existing files, are lost. ***
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** ***yes***
 
 ## Running your own container with persistent storage
 
