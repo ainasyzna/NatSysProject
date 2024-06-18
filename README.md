@@ -388,14 +388,25 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
+***
+the user 'root' and the group 'root'
+total 4
+drwxrwxrwx+ 2 codespace codespace 4096 Jun 16 07:49 myroot
+-rw-rw-rw-  1 root      root         0 Jun 18 06:55 testfile.txt
+***
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+*** 
+- Yes , output : 
+total 4
+drwxrwxrwx+ 2 codespace codespace 4096 Jun 16 07:49 myroot
+-rw-rw-rw-  1 codespace codespace    0 Jun 18 06:55 testfile.txt
+***
 
 ## You are on your own, create your own static webpage
 
@@ -421,9 +432,18 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)***
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+***
+permissions : drwxrwxrwx+
+user : '1000'
+Group: '1000'
+output:
+drwxrwxrwx+ 2 1000 1000 4096 Jun 18 07:05 /usr/local/apache2/htdocs
+***
+2. What port is the apache web server running. ***(1 mark)*** 
+*** port 80 ***
 3. What port is open for http protocol on the host machine? ***(1 mark)***
+*** port 8080 ***
 
 ## Create SUB Networks
 
@@ -442,11 +462,35 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
+***
+busybox: BusyBox is a software suite that provides several Unix utilities in a single executable file.
+--name : Used to assign a specific name to a container when it is created. This makes it easier to refer to the container later on, rather than using the automatically generated container ID.
+***
+
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+***
+NETWORK ID     NAME      DRIVER    SCOPE
+e5329e034c63   bluenet   bridge    local
+2dc731fdab80   bridge    bridge    local
+344c4c052d39   host      host      local
+11e95b158364   none      null      local
+f4f5911dc95c   rednet    bridge    local
+***
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+***
+gateway bluenet : "172.18.0.1" 
+gateway rednet : "172.19.0.1"
+***
 4. What is the network address for the running container c1 and c2.
+***
+Network adrees c1 : "172.18.0.2"
+Network adrees c2 : "172.19.0.2"
+***
 5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+***
+ping: bad address 'c2'
+***
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -456,6 +500,17 @@ docker network connect bridgenet c1
 docker network connect bridgenet c2
 docker exec c1 ping c2
 ```
+
+***
+output:
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.061 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.060 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.073 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.069 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.084 ms
+***
 
 ## What to submit
 
